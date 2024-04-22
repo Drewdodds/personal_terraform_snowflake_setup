@@ -1,1 +1,1 @@
-#This is a personal repo for testing terraforming snowflake. This repo is stored on my personal github account instead of within rudder labs as I don't want to confuse any rudder users. 
+#This is a personal repo for testing terraforming snowflake. This repo is stored on my personal github account instead of within rudder labs as I don't want to confuse any rudder users.
