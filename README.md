@@ -1,1 +1,1 @@
-#This is a persnoanl
+#This is a personal repo for testing terraforming snowflake
