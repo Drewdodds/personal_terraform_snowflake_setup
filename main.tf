@@ -6,18 +6,22 @@ terraform {
     }
   }
 }
+# this is the connection so we can "talk" to snowflake
+
 
 provider "snowflake" {
-  role = "SYSADMIN"
-  alias = "sa"
+  account = "${SNOWFLAKE_ACCOUNT}"
+  user    = "${SNOWFLAKE_USER}"
+  password = "${SNOWFLAKE_PASSWORD}"
 }
 
+
 resource "snowflake_database" "db" {
-  name = "TEST_DB"
+  name = "TF_DEMO"
 }
 
 resource "snowflake_warehouse" "warehouse" {
-  name           = "TEST_WH"
+  name           = "TF_DEMO"
   warehouse_size = "xsmall"
   auto_suspend   = 60
 }
